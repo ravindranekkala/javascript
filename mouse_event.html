@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mousehover event</title>
+     <link rel="icon" href="picks/logo1.png">
+
+    
+    <link rel="icon" href="picks/logo1.png">
+</head>
+<body>
+    <center>
+        <img height="600px" width="200px" id="menuImg" src="picks/b1.png" border="3px 3px solid black" />
+        <script> 
+            let btn = document.getElementById('menuImg');
+            btn.onmouseover = function start(){
+                document.getElementById('menuImg').src="picks/b2.png"
+            }
+            btn.onmouseout = function start(){
+                document.getElementById('menuImg').src="picks/b1.png"
+            }
+        </script>
+    </center>
+</body>
+</html>

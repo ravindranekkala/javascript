@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>for each method</title>
+</head>
+<body>
+    <h1>for each method in js</h1>
+    <p>The forEach() method calls a function for each element in an array.</p>
+    <p>The forEach() method is not executed for empty elements.</p>
+    <script type="text/javascript">
+    	let salaries = [55000,75000,40000,30000];
+    	document.write("salaries ="+salaries+"<br>");
+    	salaries.forEach(function (amount,i,arr){
+    		var increment = amount/10;
+    		document.write("increment amount by 10% ="+increment+"<br>");
+    		arr[i]=amount+increment;
+    	})
+    	document.write("increment salaries ="+salaries)
+    </script>
+</body>
+</html>

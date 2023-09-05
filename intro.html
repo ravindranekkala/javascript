@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>introduction to JS</title>
+	<link rel="icon" href="picks/logo1.png">
+</head>
+<body>
+
+	<h1>intro to javascript</h1>
+      <!-- <script>
+      	var a =77;
+      	document.write(a)
+      </script> -->
+
+</body>
+<script>
+var  a=77;
+document.write(a);
+
+var name='ravi';
+name +='jaha';
+document.write(name+"<br>");
+
+var name='ravi';
+document.write(name.length+"<br>");
+name ='jaha';
+document.write(name.length+"<br>");
+
+var name='rekha ';
+name+='jahanavi,';
+name+='jyothi';
+document.write(name+"<br>");
+
+//typeof(variable name)
+
+var a=20;
+document.write(typeof(a),"&nbsp;&nbsp;&nbsp;")
+var a='ravi'
+document.write(typeof(a),"<br>")
+
+
+var j;
+document.write(j,"<br>")
+
+//arrays in js
+var arr=['prasad','prasunna','rekha','yeswanth','vyshnavi'];
+document.write(arr,"<br>");
+console.log(arr);
+
+var arr=['ravi','teja','jahanavi','143' ]
+document.write(arr[2],arr[3],"<br>")
+
+//objects in js
+
+var obj={
+	'name':'ravi',
+	'rollno':'086',
+	'college':'ADTP',
+	'branch':'ECE',
+}
+document.write(obj.name,'&nbsp;',obj.rollno,'&nbsp;',obj.college,'&nbsp;',obj.branch,'<br>');
+console.log(obj.name,obj.rollno,obj.college,obj.branch);
+
+var trainee=[{
+	'name':'kiran',
+	'rollno':'0860',
+	'college':'ADTP',
+	'branch':'ECE',
+},
+{
+	'name':'ram',
+	'rollno':'0900',
+	'college':'ACET',
+	'branch':'ECE',
+}]
+document.write(trainee[0].name,'&nbsp;',trainee[0].rollno,'&nbsp;',trainee[0].college,'&nbsp;',trainee[0].branch,'<br>');
+document.write(trainee[1].name,'&nbsp;',trainee[1].rollno,'&nbsp;',trainee[1].college,'&nbsp;',trainee[1].branch,'<br>','<br>','<br>','<br>',);
+
+//show the trainee list using for loop
+
+var trainee=[{
+	'name':'kiran',
+	'rollno':'0860',
+	'college':'ADTP',
+	'branch':'EEE',
+	'email':'kiran@gmail.com',
+},
+{
+	'name':'ram',
+	'rollno':'0900',
+	'college':'ACET',
+	'branch':'ECE',
+	'email':'ram@gmail.com',
+},
+{
+	'name':'vikky',
+	'rollno':'690',
+	'college':'ACET',
+	'branch':'CIVIL',
+	'email':'vikky@gmail.com',
+}
+,{
+	'name':'surya',
+	'rollno':'560',
+	'college':'ACET',
+	'branch':'CSE',
+	'email':'surya@gmail.com',
+}
+,{
+	'name':'vishnu',
+	'rollno':'432',
+	'college':'ACET',
+	'branch':'MECH',
+	'email':'vishnu@gmail.com',
+},
+]
+for (var i = 0; i < trainee.length; i++) {
+	document.write((i+1),".&nbsp;",trainee[i].name,"&nbsp;",trainee[i].rollno,"&nbsp;",trainee[i].college,"&nbsp;",trainee[i].branch,"<br>","<br>")
+}
+//for using key operator
+for (var i=0;i<trainee.length;i++){
+      for (var key in trainee[i]){
+        document.write(trainee[i][key],"&nbsp;")
+      }
+      document.write("<br>")
+    }
+
+</script>
+
+</html>
+
+

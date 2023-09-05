@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>calculator</title>
+   <style type="text/css">
+      table{
+      
+      }
+      td{
+         cursor: pointer;
+         background-color: black;
+         color: white;
+      }
+      .e{
+         color: orange;
+      }
+      th{
+         background-color: lightgrey;
+      }
+   </style>
+</head>
+<body>
+
+   <center>
+      <h1 style="color:forestgreen;">Calculator</h1>
+ <table border=""; style="height: 300px; width: 15%; text-align:center; box-sizing: border-box;">
+    <tr>
+       <th id="cal_id" colspan="4" style="height: 50px; width:50%; text-align: right;"></th>
+    </tr>
+    <tr>
+      <td onclick="getnum('9')">9</td>
+      <td onclick="getnum('8')">8</td>
+      <td onclick="getnum('7')">7</td>
+      <td class="e" onclick="getnum('/')">/</td>
+    </tr>
+    <tr>
+      <td onclick="getnum('6')">6</td>
+      <td onclick="getnum('5')">5</td>
+      <td onclick="getnum('4')">4</td>
+      <td class="e" onclick="getnum('*')">*</td>
+    </tr>
+    <tr>
+      <td onclick="getnum('3')">3</td>
+      <td onclick="getnum('2')">2</td>
+      <td onclick="getnum('1')">1</td>
+      <td class="e" onclick="getnum('-')">-</td>
+    </tr>
+    <tr>
+      <td onclick="getnum('0')">0</td>
+      <td onclick="clearall('')">c</td>
+      <td class="e" onclick="getnum('=')">=</td>
+      <td class="e" onclick="getnum('+')">+</td>
+    </tr>
+ </table>
+</center>
+<script type="text/javascript">
+   function getnum(val){
+      if(val=="="){
+         var res=document.getElementById('cal_id').innerText;
+         document.getElementById('cal_id').innerText=eval(res)
+      }else{
+
+         document.getElementById('cal_id').innerText += val;
+
+      }
+   }
+   function clearall(){
+      document.getElementById('cal_id').innerText='';
+   }
+</script>
+</body>
+</html>

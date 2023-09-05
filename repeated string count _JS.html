@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <input type="text" placeholder="find the word" id="search_id" />
+    <button onclick="getcnt()">Check count</button>
+    <p id="output_id"></p>
+    <br>
+    <script>
+        function getcnt(){
+        let arr = ['ravi','ravi','raju','ravi','ravi'];
+        var search_val = document.getElementById('search_id').value;
+        let cnt = 0;
+        for (var i = 0; i < arr.length; i++){
+            if(arr[i].includes(search_val) == true){
+                cnt = cnt +1;
+            }
+        } 
+        document.getElementById('output_id').innerText = cnt;
+    }
+    </script>
+</body>
+</html>

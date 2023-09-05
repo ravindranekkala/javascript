@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> count in js</title>
+	<link rel="icon" href="picks/logo1.png">
+</head>
+<body>
+	Counting
+	<h1 id="demo">0</h1>
+	<button onclick="count()">Increase</button>
+	<button onclick="reduce()">Decrease</button>
+
+</body>
+<script type="text/javascript">
+	    var num=0;
+	    function count() {
+
+	    	let a=document.getElementById('demo');
+	    	num=num+1;
+		       a.innerHTML=num;
+		       a.style.color='red';
+		      
+	} 
+	function reduce() {
+		if(num<=0) return;
+		let c=document.getElementById('demo');
+		num=num-1;
+		c.innerHTML=num;
+		c.style.color='forestgreen';
+		
+	}
+</script>
+</html>

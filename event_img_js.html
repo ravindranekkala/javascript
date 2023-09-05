@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Image slides task</title>
+ 	<!-- <link rel="icon" href="picks/logo1.png"> -->
+ </style>
+</head>
+<body>
+	<center>
+		<button onclick="inc()">Next</button>
+		<button onclick="dec()">Previous</button>
+		<p>Slides are :</p>
+		<p id="output">
+			<img src="picks/1.png" style="width:200px; height: 200px;">
+		</p>
+	</center>
+	<script type="text/javascript">
+		var i = 1;
+		function inc(){
+			if(i<5){
+				var res=++i;
+				document.getElementById('output').innerHTML = "<img src='picks/"+res+".png'style='width:200px; height: 200px'/>"
+			}
+		}
+		function dec(){
+			if(i>1){
+				var res=--i;
+				document.getElementById('output').innerHTML = "<img src='picks/"+res+".png'style='width:200px; height: 200px'/>"
+			}
+		}
+	</script>
+</body>
+</html>
+</body>
+</html>

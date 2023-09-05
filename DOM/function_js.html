@@ -1,0 +1,70 @@
+<!--  syntax
+ functionkeyword functionname(argment-1 2 3.......){
+	statement
+	return statement
+} -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions in JS</title>
+</head>
+<body>
+    <!--  normal function with no parameters -->
+    <script type="text/javascript">
+    	function balu(){
+    		alert("visit again ")
+    	}
+    	balu() //calling the function
+    </script>
+    <!-- function with one argument -->
+    <script type="text/javascript">
+    	var n= prompt("enter the id")
+    	function maa(v) {
+    		document.write(v)
+    	}
+    	maa(n)
+    </script>
+    <!-- functon with two arguments -->
+    <script type="text/javascript">
+    	function add(c,d){
+    		document.write(c+d)
+    	}
+    	add(40,30)
+    </script>
+    <!-- anonymous function is function without using function name -->
+    <script type="text/javascript">
+    	var n = function mul(k,l) {
+    		return k*l
+    	}
+    	document.write(n(20,30))
+    </script>
+    <!-- es6 features, arrow function  -->
+    <!-- never use function key word -->
+    <!-- there is no use of paralasis baarackets if arrow function with single argument -->
+    <!-- functionname=(argument)=>{} -->
+    <script type="text/javascript">
+    	// arrow function with 2 argument
+    	add=(a,b)=>{
+    		document.write(a+b)
+    	}
+    	add(30,60)
+    </script>
+    <script type="text/javascript">
+    	//arrow function with one argument
+    	sam=c=>{
+    		document.write(c)
+    	}
+    	sam("ravi")
+    </script>
+    <script type="text/javascript">
+    	// arrow function without argument
+    	// test=_=> or
+    	test=()=>{
+    		document.write('testing')
+    	}
+    	test()
+    </script>
+</body>
+</html>

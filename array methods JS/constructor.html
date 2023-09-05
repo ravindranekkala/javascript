@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>constructor</title>
+</head>
+<body>
+    <h1>Constructor</h1>
+    <script type="text/javascript">
+    	class student{
+              constructor(rno,fname,lname){
+              	this.rollno=rno;
+              	this.firstname=fname;
+              	this.lastname=lname;
+              	this.getfullname =function(){
+              		return this.firstname+" "+this.lastname+" "+this.rollno;
+              	}
+              }
+    	}
+    	let obj = new student(86,'ravindra','nekkala');
+    	let obj1 = new student(88,'ram','k');
+    	console.log(obj.rollno,obj.firstname,obj.lastname);
+    	console.log(obj1.rollno,obj1.firstname,obj1.lastname);
+    	 console.log(obj.getfullname(),obj1.getfullname())
+    </script>
+</body>
+</html>

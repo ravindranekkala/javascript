@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>every method</title>
+</head>
+<body>
+	<h1>every method</h1>
+	<p>The every() method executes a function for each array element.</p>
+	<p>The every() method returns true if the function returns true for all elements.</p>
+	<p>The every() method returns false if the function returns false for one element.</p>
+	<script type="text/javascript">
+        let marks = [60,55,40,80];
+        console.log("student_marks ="+marks);
+        let getmarks= marks.every(function(score){
+        	return score>28;
+        })
+        console.log(getmarks)
+	</script>
+</body>
+</html>

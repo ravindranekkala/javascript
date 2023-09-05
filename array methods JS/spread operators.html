@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spread Operators</title>
+</head>
+<body>
+	<h2>Spread operaters</h2>
+	<p>It takes an iteration and expands or seperate each element.</p>
+	<p>Notation as ...(triple dots)</p>
+	<script type="text/javascript">
+	 //-----------------1st way-----------------
+		let arr = [90,80,40,70];
+		console.log(arr);
+		console.log(...arr);
+     //----------------2nd way------------------
+		let arr2=[5,6,...arr];
+		console.log(arr2);
+		console.log(...arr2);
+
+    //----------------3rd way------------------
+		let r="ravindra"
+		console.log(r);
+		console.log(...r);//r a v i n d r a
+	//----------------4th way------------------
+		let arrr1= [3,4,2,1,7,]
+		let arrr2= [5,6,3,2,7,]
+		console.log(...arrr1,...arrr2)
+    //----------------5th way------------------
+		let arrr3 =[4,5,7,...arrr1,40,59,...arrr2]
+		console.log(...arrr3)
+	//----------------6th way------------------
+		let arrr4 = [9,6,3,7];
+		function add(a,b,c,d){
+			console.log(a+b+c+d);
+		}
+		add(...arrr4);
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		array methods
+	</title>
+</head>
+<body>
+	<h4>some():-</h4>
+	<p id="demo"></p>
+	<h4>sort():-</h4>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<h4>every():-</h4>
+	<p id="demo3"></p>
+	<h4>reverse():-</h4>
+	<p id="demo4"></p>
+	<h4>fill():-</h4>
+	<p id="demo5"></p>
+	<h4>find():-</h4>
+	<p id="demo6"></p>
+	<script type="text/javascript">
+// Sample array
+const fruits = ['apple', 'banana', 'cherry', 'date', 'fig'];
+
+// Method 1: push() - Add an element to the end of the array
+fruits.push('grape');
+document.write('push():', fruits);
+
+// Method 2: pop() - Remove and return the last element of the array
+const poppedFruit = fruits.pop();
+console.log('pop():', poppedFruit, fruits);
+
+// Method 3: unshift() - Add an element to the beginning of the array
+fruits.unshift('apricot');
+console.log('unshift():', fruits);
+
+// Method 4: shift() - Remove and return the first element of the array
+const shiftedFruit = fruits.shift();
+console.log('shift():', shiftedFruit, fruits);
+
+// Method 5: concat() - Concatenate two arrays
+const moreFruits = ['grape', 'kiwi'];
+const allFruits = fruits.concat(moreFruits);
+console.log('concat():', allFruits);
+
+// Method 6: join() - Join all elements of an array into a string
+const fruitString = fruits.join(', ');
+console.log('join():', fruitString);
+
+// Method 7: slice() - Create a new array by extracting a portion of an existing array
+const slicedFruits = fruits.slice(1, 3); // Extracts elements at index 1 and 2
+console.log('slice():', slicedFruits);
+
+// Method 8: splice() - Change the contents of an array by removing or replacing elements
+const removedFruits = fruits.splice(2, 2, 'grape', 'kiwi'); // Removes two elements starting from index 2 and adds 'grape' and 'kiwi'
+console.log('splice() - Removed:', removedFruits, 'Array:', fruits);
+
+// Method 9: indexOf() - Find the index of an element in the array
+const indexOfCherry = fruits.indexOf('cherry');
+console.log('indexOf():', indexOfCherry);
+
+// Method 10: some() - The Array.some() method checks if any of the elements in an array pass a test (provided as a function).
+const ages = [3, 10, 18, 20];
+document.getElementById("demo").innerHTML = ages.some(checkAdult);
+
+function checkAdult(age) {
+  return age > 18;
+
+}
+
+// Method 11: includes() - Check if an element exists in the array
+const hasBanana = fruits.includes('banana');
+console.log('includes():', hasBanana);
+
+// Method 12: forEach() - Execute a function for each element in the array
+console.log('forEach():');
+fruits.forEach(fruit => {
+  console.log(fruit);
+});
+
+// Method 13: map() - Create a new array by applying a function to each element in the array
+const capitalizedFruits = fruits.map(fruit => fruit.toUpperCase());
+console.log('map():', capitalizedFruits);
+
+// Method 14: filter() - Create a new array with elements that pass a test
+const longFruits = fruits.filter(fruit => fruit.length > 5);
+console.log('filter():', longFruits);
+
+// Method 15: reduce() - Reduce the array to a single value through a function
+const totalLength = fruits.reduce((total, fruit) => total + fruit.length, 0);
+console.log('reduce():', totalLength);
+
+// Method 16 : sort() -The sort() method sorts an array alphabetically:
+//Banana,Orange,Apple,Mango
+//Apple,Banana,Mango,Orange
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
+
+// Method 17 : every() -every() returns true if all elements in an array pass a test (provided as a function).
+var age = [32, 33, 16, 40];
+document.getElementById("demo3").innerHTML = age.every(checkAge);
+
+function checkAge(age) {
+  return age > 18;
+}
+
+//Merhod 18 : reverse() -The Array.reverse() method reverses the order of the elements in an array.
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo4").innerHTML = fruit.reverse();
+
+// // method 19 : fill()-fill() fills specified elements in an array with a value.
+// Fill all array elements with "Kiwi":
+// Kiwi,Kiwi,Kiwi,Kiwi
+const fru = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo5").innerHTML = fru.fill("Kiwi");
+
+
+// method 20: find() -find() returns the value of the first element in an array that passes a test (provided by a function).
+const agess = [3, 10, 18, 20];
+
+document.getElementById("demo6").innerHTML = agess.find(checkAge);
+
+function checkAge(ages) {
+  return ages > 18;
+}
+</script>
+
+</body>
+</html>

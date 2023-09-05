@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>onkeyup event</title>
+      <link rel="icon" href="picks/logo1.png">
+
+</head>
+<body>
+     <label>enter the name</label>
+     <input type="text" name="please enter the name" id="in_id" onkeyup="inpt(this.value)" />
+     <p id="nr"></p>
+     <script type="text/javascript">
+     	let input=document.getElementById('in_id');
+     	let p = document.getElementById("nr");
+     	function inpt(val){
+     		if(val==""){
+     			input.style.outline="2px solid red"
+     			alert('please enter the name')
+     			p.innerText = "enter name"
+     			document.body.style.color="red"
+     		}else{
+     			
+     			p.innerText = val
+     		}
+
+     	}
+     </script>
+</body>
+</html>

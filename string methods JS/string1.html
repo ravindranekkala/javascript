@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table</title>
+</head>
+<body>
+	<table border="" cellspacing="0" border="1px solid black" width="50px">
+		<tr>
+			<td>D</td>
+			<td>R</td>
+			<td>I</td>
+			<td>V</td>
+			<td>E</td>
+			<td></td>
+			<td>R</td>
+			<td>E</td>
+			<td>A</td>
+			<td>D</td>
+			<td>Y</td>
+		</tr>
+		<tr >
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function getstr(str) {
+			document.write("<b> "+str+"</b><br>")
+		}
+	// let name = "drive ready";
+    // getstr(name)
+    // getstr(name.length)       //gives the size of the string
+    // getstr(name.charAt(2))    //gives the character position value
+    // getstr(name.indexOf('v')) //gives position of the 
+    // getstr(name.indexOf('ready'))
+
+		let name = "drive ready";
+		getstr("original String = "+name)
+		getstr("String length = "+name.length)      
+		getstr("Char At = "+name.charAt(2))    
+		getstr("Index Of = "+name.indexOf('v')) 
+		getstr("Index Of 2nd way ="+name.indexOf('ready'))
+		getstr("Last indexOf string ="+name.lastIndexOf('r'))
+
+//concatination is used to add the 2 strings at a time.
+		let name1 = "drive ready";
+		getstr("to uppercase = "+name.toUpperCase())
+		getstr("to lowercase = "+name1.toLowerCase())
+		let name2 = "batch";
+		let name3 = 'FN';
+		let name4 = 'FSD';
+		getstr("concate of string ="+name1.concat(name2))
+		getstr("concate of string ="+name1.concat(name2,name3))
+		getstr("concate of string ="+name1.concat(name2,name3,name4))
+		let username = 'amulya'
+		getstr("trim() method = "+username.trim())
+
+//it is used to convert the string into the array.
+		let name5 = 'ammu&hema,ramya';
+		console.log(name5.split("&"));
+		console.log(name5.split(","));
+
+     //it is indicates the starting and ending characterr of the string.
+		let name6 = 'thub';
+		document.write(name6.startsWith("t"));
+		document.write(name6.startsWith("l"));
+		document.write(name6.endsWith("u"));
+		document.write(name6.endsWith("b"));
+
+
+    //Slice method
+    //slice of string = '+str.slice(startpos,endpos-1)'
+    //it allows positive and negative index values
+		getstr('slice of the string = '+name.slice(1,4));
+		getstr('slice of the string = '+name.slice(-3));
+		getstr('slice of the string = '+name.slice(-4,-2));
+
+//include method
+    //it is used to check the string name correct or not
+		getstr("includes of string ="+name6.includes('ready'))
+
+
+		let name7 = 'aditya';
+//substring
+		getstr("slice method ="+name7.substring(1,4))
+		getstr("slice method ="+name7.substring(5,1))
+		getstr("slice method ="+name7.substring(2,6))
+		// getstr("slice method ="+name7.substring(-3,-1))
+
+//substr
+// syntax substr(1st,last)
+		getstr("substr of the name ="+name.substr(1,7))//start,length 
+
+//charcodeAt method
+		getstr("charcodeAt of string ="+name7.charCodeAt(''))
+
+
+//repeat method
+		getstr("repeat of string ="+name7.repeat('2'))
+
+//replace method
+		getstr("replace of string ="+name6.replace('thub','aditya'))
+	</script>
+
+</body>
+</html>

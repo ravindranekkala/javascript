@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>R E 1</title>
+</head>
+<body>
+    <input type="text" name="" id="id_in"/>
+    <button onclick="check_numornot()"> num validity</button><br>
+    <span id="sp_id"></span> <br>
+     <input type="text" name="" id="id_in2"/>
+    <button onclick="check_characterornot()"> char validity</button><br>
+    <span id="sp_id2"></span>
+    <script type="text/javascript">
+    	function check_numornot(){ 
+    	ra = /^[0-9]{10}$/;
+    	let r = document.getElementById("id_in").value;
+    	output = ra.test(r);
+    	if(output==true){
+    		document.getElementById("sp_id").innerText="correct"
+    		document.getElementById("sp_id").style.color="green"
+    	}else{
+    		document.getElementById("sp_id").innerText="enter correct statement"
+    		document.getElementById("sp_id").style.color="red"
+    	}
+    }
+
+
+    function check_characterornot(){
+     // ra = /^[a-z]+$/;// small letters
+     // ra = /^[A-Z]+$/;// capital letters
+     // ra = /^[a-zA-Z]+$/;// small and capital letters
+     // ra = /^[a-zA-Z0-9]+$/;// alphanumeric values
+     ra = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;// gamil verification
+    let r = document.getElementById("id_in2").value;
+    	output = ra.test(r);
+    	if(output==true){
+    		document.getElementById("sp_id2").innerText="correct"
+    		document.getElementById("sp_id2").style.color="green"
+    	}else{
+    		document.getElementById("sp_id2").innerText="enter correct statement"
+    		document.getElementById("sp_id2").style.color="red"
+    	}
+    }
+    </script>
+
+</body>
+</html>

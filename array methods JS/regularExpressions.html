@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Regular Expressions</title>
+</head>
+<body>
+  <h1>Regular Expressions</h1>
+  <script type="text/javascript">
+    	//let str = 'ravi' general decelaration of string
+    	let re = /ravi/ //regular expression deceleration of string
+    	let output = re.test("full stack trainee ravi");
+          if(output== true){
+         console.log("valid");
+          }else{
+         console.log("not a valid");
+          }
+        console.log(output);
+
+          let ra = /ravi/i //regular expression deceleration with 'i'(if you use 'i' it will accept capital &small letters)
+          let out = ra.test("full stack trainee RAVI");
+          console.log(out);
+
+        let rav = /^F/i //regular expression deceleration with '^'(it will check the first letter of the string)
+        let put = rav.test("full stack trainee RAVI");
+        let put1 = rav.test(" RAVI");
+        console.log(put,put1);
+
+
+          let rea = /batch/g// which is used to multiple idexes
+          let res= rea.exec("web developer batch");
+          console.log(res);
+          console.log(res.index);
+
+          //number
+          // let se = /^[0-9]{10}/ 
+          // let se = /^[0-9]{10}$/ // $ it will stop exceed range of the numbers
+          let se = /^[9][0-9]{9}$/  // it will accept the number if the number starts with 9
+          let rel =se.test("9876543210");
+          console.log(rel)
+          
+
+        </script>
+      </body>
+      </html>

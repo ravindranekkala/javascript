@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>map method</title>
+</head>
+<body>
+	<table id="table_id" border="" cellspacing="0" style="border-color:olive; width: 500px;text-align: center;">
+		
+	</table>
+     <script type="text/javascript">
+        let arr1 = [
+        	  {
+        	'name':'<b>NAME</b>',
+        	'rollno':'<b>ROLLNO</b>',
+        	'college':'<b>COLLEGE</b>',
+        	'email':'<b>EMAIL</b>'
+        },
+
+        {
+
+        	'name':'ravi',
+        	'rollno':'086',
+        	'college':'ADTP',
+        	'email':'ravi@gmail.com'
+        },
+        {
+        	'name':'raju',
+        	'rollno':'845',
+        	'college':'ACET',
+        	'email':'raju@gmail.com'
+        }];  
+        let tr=''
+        arr1.map(function(each,i,arr){
+        	tr+="<tr><td>"+(i+1)+"</td><td>"+(each.name)+"</td><td>"+(each.rollno)+"</td><td>"+(each.college)+"</td><td>"+(each.email)+"</td></tr>";
+        });
+        console.log(tr)
+        document.getElementById('table_id').innerHTML=tr
+       
+     </script>
+</body>
+</html>
+ 
+

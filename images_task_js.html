@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>images task</title>
+	<link rel="icon" href="picks/logo1.png">
+	<style type="text/css">
+		.div{
+			height: 450px;
+			width: 1500px;
+			 border: 1px solid black;
+			 float: left;
+			 background-color: forestgreen;
+		}
+		.a{
+			height: 400px;
+			width: 1050px;
+			 border: 1px solid black;
+			 float: left;
+			 margin: 20px;
+			 background-color: white;
+		}
+		.b{
+			height: 350px;
+			width: 300px;
+			 border: 1px solid black;
+			 box-sizing: border-box;
+			margin: 20px;
+			float: left;
+			cursor: pointer;
+		}
+		.c{
+			height: 400px;
+			width: 350px;
+			border: 1px solid black;
+			float: right;
+			margin: 20px;
+			background-color: grey;
+/*			padding-right: 40px;*/
+		}
+		img{
+			height: 350px;
+			width: 300px;
+		}
+	</style>
+</head> 	
+<body>
+	<div class="div">
+   <div class="a">
+   	 <div class="b"> <img src="picks/im1.jpg" onclick="getimage('picks/im1.jpg')"></div>
+   	 <div class="b"> <img src="picks/im2.jpg" onclick="getimage('picks/im2.jpg')"></div>
+   	 <div class="b"> <img src="picks/im3.svg" onclick="getimage('picks/im3.svg')"></div>
+   </div>
+    <div class="c" id="res_id">
+   	 <center><p style="margin-top:170px; color:white;">please select an image</p></center>
+   </div>
+   <script type="text/javascript">
+   	function getimage(img_path){
+		document.getElementById('res_id').innerHTML= "<img src='"+img_path +"' style='height:400px;width:350px;'/>"
+   	}
+   </script>
+</div>
+</body>
+</html>

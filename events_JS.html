@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>events in js</title>
+    <link rel="icon" href="picks/logo1.png">
+</head>
+<body>
+	<!-- inline event -->
+   <!--  <button onclick="ready()"> click </button>
+    <script type="text/javascript">
+    	function ready(){
+    		alert('missing');
+    		document.body.style.background='forestgreen';
+    	}
+    </script> -->
+
+    <!-- 2nd way using function name -->
+
+     <!-- <button id="btn_id"> click me </button>
+
+    <script type="text/javascript">
+    	let btn = document.getElementById('btn_id');
+    	btn.onclick= ready;
+    	function ready(){
+    		alert('missing');
+    		document.body.style.background='red';
+    	}
+    </script> -->
+
+    <!-- 3rd way -->
+    <!-- <script type="text/javascript">
+    	let btn = document.getElementById('btn_id');
+    	btn.addEventListener('click',ravi);
+    	function ravi(){
+    		alert('recovery');
+    		document.body.style.background='yellow';
+    	}
+    </script> -->
+
+
+
+
+
+    <!-- <button onclick="hidediv()">HIDE</button>
+    <button onclick="showdiv()">SHOW</button>
+    <div id="id">FSD</div>
+    <script type="text/javascript">
+    	function hidediv(){
+    		document.getElementById('id').style.display='none'
+    	}
+    	function showdiv(){
+    		document.getElementById('id').style.display='block'
+    	}
+    </script> -->
+
+
+    <button onclick="hidediv()">HIDE</button>
+    <button onclick="showdiv()">SHOW</button>
+    <div id="id">FSD</div>
+    <script type="text/javascript">
+    	function hidediv(){
+    		document.getElementById('id').style.display='none'
+    	}
+    	function showdiv(){
+    		document.getElementById('id').style.display='block'
+    	}
+    </script>
+</body>
+</html>
